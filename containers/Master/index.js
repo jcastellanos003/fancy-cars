@@ -12,9 +12,8 @@ const StyledMaster = styled.div`
 `;
 
 const InnerPage = styled.div`
-  max-width: ${props => props.theme.maxWidth};
-  margin: 0 auto;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
 `;
  
 class Master extends Component {
@@ -24,10 +23,12 @@ class Master extends Component {
           <StyledMaster>
             <Meta />
             <Header />
+
             <InnerPage>
               {this.props.children}
             </InnerPage>
         </StyledMaster>
+
         <MasterGlobalStyle />
       </ThemeProvider>
     )

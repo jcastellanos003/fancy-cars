@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const Meta = () => (
+export const Meta = () => (
   <Head>
     <meta
       name="viewport"
@@ -10,5 +10,3 @@ const Meta = () => (
     <title>Fancy Cars</title>
   </Head>  
 );
-
-export default Meta;

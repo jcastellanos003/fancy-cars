@@ -1,0 +1,237 @@
+{
+  "brands": [
+    {
+      "id": "1",
+      "name": "BMW"
+    },
+    {
+      "id": "2",
+      "name": "Chevrolet"
+    },
+    {
+      "id": "3",
+      "name": "Ferrari"
+    },
+    {
+      "id": "4",
+      "name": "Ford"
+    },
+    {
+      "id": "5",
+      "name": "Lamborghini"
+    },
+    {
+      "id": "6",
+      "name": "Land Rover"
+    },
+    {
+      "id": "7",
+      "name": "Mercedes Benz"
+    },
+    {
+      "id": "8",
+      "name": "Porsche"
+    },
+    {
+      "id": "9",
+      "name": "Toyota"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "1",
+      "brand": "BMW",
+      "model": "4 Series Grand Coupe",
+      "year": 2018,
+      "mileage": "9.000 kms",
+      "doors": "3",
+      "engineSize": "2.500",
+      "colour": "Blue",
+      "transmission": "Automatic",
+      "price": "$ 120.000.000",
+      "image": "/imgs/bmw_4.jpeg"
+    },
+    {
+      "id": "2",
+      "brand": "BMW",
+      "model": "Mini cooper s JCW pack",
+      "year": 2019,
+      "mileage": "0 kms",
+      "doors": "3",
+      "engineSize": "1.500",
+      "colour": "Grey",
+      "transmission": "Automatic",
+      "price": "$ 95.000.000",
+      "image": "/imgs/bmw_mini.jpeg"
+    },
+    {
+      "id": "3",
+      "brand": "Chevrolet",
+      "model": "80 series deluxe",
+      "year": 1941,
+      "mileage": "153.000 kms",
+      "doors": "3",
+      "engineSize": "3.500",
+      "colour": "Orange",
+      "transmission": "Manual",
+      "price": "$ 60.000.000",
+      "image": "/imgs/chevy_80.jpeg"
+    },
+    {
+      "id": "4",
+      "brand": "Chevrolet",
+      "model": "Camaro SS",
+      "year": 2013,
+      "mileage": "52.000 kms",
+      "doors": "5",
+      "engineSize": "6.200",
+      "colour": "Yellow",
+      "transmission": "Automatic",
+      "price": "$ 130.000.000",
+      "image": "/imgs/chevy_camaro.jpeg"
+    },
+    {
+      "id": "5",
+      "brand": "Chevrolet",
+      "model": "Corvette",
+      "year": 2020,
+      "mileage": "0 kms",
+      "doors": "5",
+      "engineSize": "6.200",
+      "colour": "Grey Space",
+      "transmission": "Automatic",
+      "price": "$ 330.000.000",
+      "image": "/imgs/chevy_corvette.jpeg"
+    },
+    {
+      "id": "6",
+      "brand": "Ferrari",
+      "model": "458 F142",
+      "year": 2017,
+      "mileage": "35.000 kms",
+      "doors": "3",
+      "engineSize": "4.500",
+      "colour": "Red",
+      "transmission": "Automatic",
+      "price": "$ 845.000.000",
+      "image": "/imgs/ferrari_458.jpeg"
+    },
+    {
+      "id": "7",
+      "brand": "Ford",
+      "model": "80 Series truck",
+      "year": 1958,
+      "mileage": "20.000 kms",
+      "doors": "2",
+      "engineSize": "4.000",
+      "colour": "Orange",
+      "transmission": "Manual",
+      "price": "$ 215.000.000",
+      "image": "/imgs/ford_80.jpeg"
+    },
+    {
+      "id": "8",
+      "brand": "Ford",
+      "model": "Focus Se",
+      "year": 2013,
+      "mileage": "60.000 kms",
+      "doors": "5",
+      "engineSize": "2.000",
+      "colour": "Black",
+      "transmission": "Automatic",
+      "price": "$ 34.000.000",
+      "image": "/imgs/ford_focus.jpeg"
+    },
+    {
+      "id": "9",
+      "brand": "Ford",
+      "model": "Mustang Fastback Gt",
+      "year": 1965,
+      "mileage": "10.000 kms",
+      "doors": "2",
+      "engineSize": "4.000",
+      "colour": "Red",
+      "transmission": "Automatic",
+      "price": "$ 205.000.000",
+      "image": "/imgs/ford_mustang.jpeg"
+    },
+    {
+      "id": "10",
+      "brand": "Lamborghini",
+      "model": "Huracan Performante",
+      "year": 2019,
+      "mileage": "0 kms",
+      "doors": "2",
+      "engineSize": "V10 5.2 L",
+      "colour": "Green",
+      "transmission": "Automatic",
+      "price": "$ 1.656.768.000",
+      "image": "/imgs/lambo_hur.jpeg"
+    },
+    {
+      "id": "11",
+      "brand": "Land Rover",
+      "model": "Range rover",
+      "year": 2013,
+      "mileage": "48.500 kms",
+      "doors": "5",
+      "engineSize": "2.000",
+      "colour": "White Snow",
+      "transmission": "Automatic",
+      "price": "$ 96.000.000",
+      "image": "/imgs/land_range.jpeg"
+    },
+    {
+      "id": "12",
+      "brand": "Mercedes Benz",
+      "model": "GTS AMG",
+      "year": 2018,
+      "mileage": "3.700 kms",
+      "doors": "2",
+      "engineSize": "4.000",
+      "colour": "Grey",
+      "transmission": "Automatic",
+      "price": "$ 459.000.000",
+      "image": "/imgs/mer_amg.jpeg"
+    },
+    {
+      "id": "13",
+      "brand": "Mercedes Benz",
+      "model": "Wagon G Class",
+      "year": 2019,
+      "mileage": "100 kms",
+      "doors": "5",
+      "engineSize": "4.O L V8",
+      "colour": "Grey",
+      "transmission": "Automatic",
+      "price": "$ 572.000.000",
+      "image": "/imgs/mer_g-class.jpeg"
+    },
+    {
+      "id": "14",
+      "brand": "Porsche",
+      "model": "911 Carrera S",
+      "year": 2017,
+      "mileage": "3.000 kms",
+      "doors": "2",
+      "engineSize": "3.000",
+      "colour": "Blue",
+      "transmission": "Automatic",
+      "price": "$ 581.000.000",
+      "image": "/imgs/porsche_carrera.jpeg"
+    },
+    {
+      "id": "15",
+      "brand": "Toyota",
+      "model": "Rigid Deluxe",
+      "year": 2018,
+      "mileage": "2.200 kms",
+      "doors": "5",
+      "engineSize": "4.000",
+      "colour": "Grey",
+      "transmission": "Automatic",
+      "price": "$ 425.000.000",
+      "image": "/imgs/toyota_rigid.jpeg"
+    }
+  ]
+}

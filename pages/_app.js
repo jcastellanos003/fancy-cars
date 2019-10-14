@@ -9,7 +9,7 @@ class MyApp extends App {
         <Master>
           <Component />
         </Master>
-    )
+    );
   }
 }
 

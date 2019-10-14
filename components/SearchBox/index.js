@@ -1,66 +1,30 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Close } from 'styled-icons/material/Close';
-import { SearchAlt } from 'styled-icons/boxicons-regular/SearchAlt';
 
-const SearchIcon = styled(SearchAlt)`
-  width: 1.3rem;
-`;
+import * as components from './styles';
 
-const CloseIcon = styled(Close)`
-  width: 1.3rem;
-`;
-
-const SearchInput = styled.input`
-  background: ${props => props.theme.white};
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border: 1px solid ${props => props.theme.blueDark};
-  padding: 10px;
-  font-size: 0.8rem;
-  flex: 1 1 0;
-  outline: none;
-`;
-
-const SearchButton = styled.button`
-  color: ${props => props.theme.white};
-  background: ${props => props.theme.blueDark};
-  border: 1px solid ${props => props.theme.blueDark};
-  border: none;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-`;
-
-const SearchForm = styled.form`
-  padding: 1rem;
-  display: flex;
-`;
-
-const SearchBox = ({ onSubmit, searchMode }) => {
+export const SearchBox = ({ onSubmit, onChange, searchMode }) => {
   return (
-    <SearchForm onSubmit={onSubmit} autoComplete="off">
-      <SearchInput
+    <components.SearchForm onSubmit={onSubmit} autoComplete="off">
+      <components.SearchInput
         type="text"
         name="search"
         placeholder="Search your car"
+        onChange={onChange}
         required
       />
-      <SearchButton type="submit">
+      <components.SearchButton type="submit">
         {
           searchMode
-          ? (<CloseIcon />)
-          :  (<SearchIcon />)
+          ? (<components.CloseIcon />)
+          :  (<components.SearchIcon />)
         }
-      </SearchButton>
-    </SearchForm>
+      </components.SearchButton>
+    </components.SearchForm>
   );
 };
 
 SearchBox.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  value: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
   searchMode: PropTypes.bool
 };
-
-export default SearchBox;
