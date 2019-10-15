@@ -14,6 +14,9 @@ const Index = () => {
       query: { brand: form.search }
     });
   };
+  const onCompare = () => {
+    console.log('on add compare');
+  }
 
   const router = useRouter();
   const vehicles = (useFetch('http://localhost:9003/vehicles', {})).response;
@@ -33,7 +36,12 @@ const Index = () => {
           vehicles
           && vehicles.length > 0
           && vehicles.map(vehicle => (
-            <components.VehiclePreviewCard key={vehicle.id} className="vehicle-card" data={vehicle} />
+            <components.VehiclePreviewCard
+              key={vehicle.id}
+              className="vehicle-card"
+              data={vehicle}
+              onCompare={onCompare}
+            />
           )) 
         }
       </components.VehiclesList>

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledCardContainer = styled.div`
+  position: relative;
   border-radius: 5px;
   background: ${props => props.theme.white};
   border: none;

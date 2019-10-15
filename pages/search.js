@@ -11,6 +11,9 @@ const Search = () => {
   const onBack = () => {
     router.back();
   }
+  const onCompare = () => {
+    console.log('on add compare');
+  };
 
   return (
     <section>
@@ -24,7 +27,12 @@ const Search = () => {
           vehicles
           && vehicles.length > 0
           && vehicles.map(vehicle => (
-            <components.VehiclePreviewCard key={vehicle.id} className="vehicle-card" data={vehicle} />
+            <components.VehiclePreviewCard
+              key={vehicle.id}
+              className="vehicle-card"
+              data={vehicle}
+              onCompare={onCompare}
+            />
           )) 
         }
       </components.VehiclesList>

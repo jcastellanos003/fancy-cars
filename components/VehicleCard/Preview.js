@@ -1,24 +1,29 @@
 import PropTypes from 'prop-types';
 
 import { Card, CardHeader, CardContent  } from '../Card';
-import * as components from './styles';
+import { CompareButton } from '../CompareButton';
+import * as styled from './styles';
 
-export const VehiclePreviewCard = ({ className, data:
-    { price, year, mileage, brand, model, image: src }
+export const VehiclePreviewCard = ({
+    className,
+    onCompare,
+    data: { price, year, mileage, brand, model, image: src }
   }) => (
   <Card size="medium" className={className}>
 
     <CardHeader>
-      <components.VehicleImage src={src} />
+      <styled.VehicleImage src={src} />
     </CardHeader>
 
     <CardContent>
-      <components.PriceLabel>{price}</components.PriceLabel>
-      <components.InfoLabel>{year} | {mileage}</components.InfoLabel>
+      <styled.PriceLabel>{price}</styled.PriceLabel>
+      <styled.InfoLabel>{year} | {mileage}</styled.InfoLabel>
 
-      <components.BrandLabel>{brand}</components.BrandLabel>
-      <components.ModelLabel>{model}</components.ModelLabel>
+      <styled.BrandLabel>{brand}</styled.BrandLabel>
+      <styled.ModelLabel>{model}</styled.ModelLabel>
     </CardContent>
+
+    <CompareButton onClick={onCompare} />
 
   </Card>
 );
@@ -33,5 +38,6 @@ VehiclePreviewCard.propTypes = {
     mileage: PropTypes.string.isRequired,
     brand: PropTypes.string.isRequired,
     model: PropTypes.string.isRequired,
-  }).isRequired
+  }).isRequired,
+  onCompare: PropTypes.func.isRequired
 };
