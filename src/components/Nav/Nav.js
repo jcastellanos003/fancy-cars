@@ -1,6 +1,5 @@
 import * as components from './styles';
-import { ActiveLink } from '../ActiveLink';
-
+import { ActiveLink } from '../ActiveLink/ActiveLink';
 
 export const Nav = () => (
   <components.NavMenu>

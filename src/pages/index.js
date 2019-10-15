@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 
 import * as components from '../components';
-import VehicleList from '../containers/VehicleList';
+import { VehicleList } from '../containers';
 import { useFetch, useForm } from '../core';
 
 const Index = () => {

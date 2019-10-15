@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import * as styled from './styles';
 import * as components from '../../components';
 
-const VehicleList = ({ vehicles }) => {
+export const VehicleList = ({ vehicles }) => {
   const onCompare = (event) => {
     event.stopPropagation();
     console.log('on add compare');
@@ -44,5 +44,3 @@ const VehicleList = ({ vehicles }) => {
 VehicleList.propTypes = {
   vehicles: PropTypes.array
 };
-
-export default VehicleList;
