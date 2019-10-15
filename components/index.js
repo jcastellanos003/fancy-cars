@@ -10,3 +10,4 @@ export * from './Chip';
 export * from './CompareButton';
 export * from './PageTitle';
 export * from './PriceLabel';
+export * from './Header';
