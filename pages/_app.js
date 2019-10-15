@@ -1,14 +1,26 @@
 import App from 'next/app';
-import Master from '../containers/Master';
+import { ThemeProvider } from 'styled-components';
+
+import { Master, Meta, Header, InnerPage } from '../components';
+import { theme, MasterGlobalStyle } from '../theme';
 
 class MyApp extends App {
   render() {
     const { Component } = this.props;
 
     return (
+      <ThemeProvider theme={theme}>
         <Master>
-          <Component />
+          <Meta />
+          <Header />
+
+          <InnerPage>
+            <Component />
+          </InnerPage>
         </Master>
+
+        <MasterGlobalStyle />
+      </ThemeProvider>
     );
   }
 }

@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { theme } from './CommonTheme';
+import { theme } from './DefaultTheme';
 
-const MasterGlobalStyle = createGlobalStyle`
+export const MasterGlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Open Sans', sans-serif;
     src: url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
@@ -29,5 +29,3 @@ const MasterGlobalStyle = createGlobalStyle`
     color: ${theme.black};
   }
 `;
-
-export default MasterGlobalStyle;
