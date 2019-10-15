@@ -1,35 +1,32 @@
 import PropTypes from 'prop-types';
 
 import { Card, CardHeader, CardContent  } from '../Card';
-import { CompareButton } from '../CompareButton';
 import * as styled from './styles';
 
 export const VehiclePreviewCard = ({
-    className,
-    onCompare,
+    onSelected,
     data: { price, year, mileage, brand, model, image: src }
   }) => (
-  <Card size="medium" className={className}>
-
-    <CardHeader>
-      <styled.VehicleImage src={src} />
-    </CardHeader>
-
-    <CardContent>
-      <styled.PriceLabel>{price}</styled.PriceLabel>
-      <styled.InfoLabel>{year} | {mileage}</styled.InfoLabel>
-
-      <styled.BrandLabel>{brand}</styled.BrandLabel>
-      <styled.ModelLabel>{model}</styled.ModelLabel>
-    </CardContent>
-
-    <CompareButton onClick={onCompare} />
-
-  </Card>
+    <section onClick={onSelected}>
+      <Card size="medium">
+    
+        <CardHeader>
+          <styled.VehicleImage src={src} />
+        </CardHeader>
+    
+        <CardContent>
+          <styled.PriceLabel>{price}</styled.PriceLabel>
+          <styled.InfoLabel>{year} | {mileage}</styled.InfoLabel>
+    
+          <styled.BrandLabel>{brand}</styled.BrandLabel>
+          <styled.ModelLabel>{model}</styled.ModelLabel>
+        </CardContent>
+    
+      </Card>
+    </section>
 );
 
 VehiclePreviewCard.propTypes = {
-  className: PropTypes.string,
   data: PropTypes.shape({
     id: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
@@ -39,5 +36,5 @@ VehiclePreviewCard.propTypes = {
     brand: PropTypes.string.isRequired,
     model: PropTypes.string.isRequired,
   }).isRequired,
-  onCompare: PropTypes.func.isRequired
+  onSelected: PropTypes.func.isRequired
 };

@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 
 import * as components from '../components';
+import VehicleList from '../containers/VehicleList';
 import { useFetch } from '../core';
 
 const Search = () => {
@@ -11,9 +12,6 @@ const Search = () => {
   const onBack = () => {
     router.back();
   }
-  const onCompare = () => {
-    console.log('on add compare');
-  };
 
   return (
     <section>
@@ -22,20 +20,7 @@ const Search = () => {
         <components.Chip name={brand} onClose={onBack} />
       </components.PageHeader>
 
-      <components.VehiclesList>
-        {
-          vehicles
-          && vehicles.length > 0
-          && vehicles.map(vehicle => (
-            <components.VehiclePreviewCard
-              key={vehicle.id}
-              className="vehicle-card"
-              data={vehicle}
-              onCompare={onCompare}
-            />
-          )) 
-        }
-      </components.VehiclesList>
+      <VehicleList vehicles={vehicles}/>
     </section>
   );
 };

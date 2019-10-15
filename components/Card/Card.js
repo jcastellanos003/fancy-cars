@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 import { StyledCardContainer } from './styles';
 
-export const Card = ({ className, size, children}) => (
-  <StyledCardContainer className={className}>
+export const Card = ({ size, children }) => (
+  <StyledCardContainer>
     <div className={size}>
       {children}
     </div>
@@ -11,7 +11,6 @@ export const Card = ({ className, size, children}) => (
 );
 
 Card.propTypes = {
-  className: PropTypes.string,
   size: PropTypes.oneOf(['medium', 'large']).isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),

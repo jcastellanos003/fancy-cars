@@ -4,7 +4,6 @@ export * from './Meta';
 export * from './SearchBox';
 export * from './Card';
 export * from './VehicleCard';
-export * from './VehiclesList';
 export * from './BackButton';
 export * from './PageHeader';
 export * from './Chip';

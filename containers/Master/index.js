@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
+import Header from '../Header';
 import { theme } from './CommonTheme';
 import { Meta } from '../../components';
-import Header from '../Header';
 import MasterGlobalStyle from './GlobalStyles';
 
 const StyledMaster = styled.div`
