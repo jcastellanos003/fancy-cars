@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { Master, Meta, Header, InnerPage } from '../components';
 import { theme, MasterGlobalStyle } from '../theme';
 
-class MyApp extends App {
+class FancyCarsApp extends App {
   render() {
     const { Component } = this.props;
 
@@ -25,4 +25,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp;
+export default FancyCarsApp;
