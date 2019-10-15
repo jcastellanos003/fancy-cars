@@ -9,17 +9,17 @@ const Index = () => {
   const vehicles = (useFetch('http://localhost:9003/vehicles', {})).response;
 
   const onSearch = () => {
-    if (!form.search) {
+    if (!fields.search) {
       return;
     }
 
     router.push({
       pathname: '/search',
-      query: { brand: form.search }
+      query: { brand: fields.search }
     });
   };
 
-  const { fields: form, onChange, onSubmit } = useForm(onSearch);
+  const { fields, onChange, onSubmit } = useForm(onSearch);
 
   return (
     <section>

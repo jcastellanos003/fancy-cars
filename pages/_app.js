@@ -1,4 +1,4 @@
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import Master from '../containers/Master';
 
 class MyApp extends App {

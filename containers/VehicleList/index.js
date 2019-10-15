@@ -1,40 +1,43 @@
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-import { StyledVehiclesList } from './styles/VehicleListStyles';
+import * as styled from './styles';
 import * as components from '../../components';
 
 const VehicleList = ({ vehicles }) => {
-  const router = useRouter();
-
-  const onDetails = id => {
-    router.push({
-      pathname: `/vehicle/${id}`
-    });
-  };
-
-  const onCompare = () => {
+  const onCompare = (event) => {
+    event.stopPropagation();
     console.log('on add compare');
   };
 
   return (
-    <StyledVehiclesList>
+    <styled.StyledVehiclesList>
       {
         vehicles
         && vehicles.length > 0
-        && vehicles.map(vehicle => (
-          <div className="vehicle-item" key={vehicle.id}>
-            <components.VehiclePreviewCard
-              data={vehicle}
-              onSelected={() => onDetails(vehicle.id)}
-            />
-            <span onClick={onCompare}>
-              <components.CompareButton />
-            </span>
+        && vehicles.map(({ id, image, price, year, mileage, brand, model }) => (
+          <div className="vehicle-item" key={id}>
+            <Link href="/vehicle/[vid]" as={`/vehicle/${id}`}>
+              <section>
+                <components.VehicleCard
+                  size="medium"
+                  image={image}
+                >
+                  <components.PriceLabel>{price}</components.PriceLabel>
+                  <styled.InfoLabel>{year} | {mileage}</styled.InfoLabel>
+            
+                  <styled.BrandLabel>{brand}</styled.BrandLabel>
+                  <styled.ModelLabel>{model}</styled.ModelLabel>
+                </components.VehicleCard>
+                <span onClick={onCompare}>
+                  <components.CompareButton />
+                </span>
+              </section>
+            </Link>
           </div>
         )) 
       }
-    </StyledVehiclesList>
+    </styled.StyledVehiclesList>
   )
 };
 

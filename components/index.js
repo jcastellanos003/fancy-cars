@@ -8,3 +8,5 @@ export * from './BackButton';
 export * from './PageHeader';
 export * from './Chip';
 export * from './CompareButton';
+export * from './PageTitle';
+export * from './PriceLabel';

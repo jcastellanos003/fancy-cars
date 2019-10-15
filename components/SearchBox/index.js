@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import * as components from './styles';
 
-export const SearchBox = ({ onSubmit, onChange, searchMode }) => {
+export const SearchBox = ({ onSubmit, onChange }) => {
   return (
     <components.SearchForm onSubmit={onSubmit} autoComplete="off">
       <components.SearchInput
@@ -13,11 +13,7 @@ export const SearchBox = ({ onSubmit, onChange, searchMode }) => {
         required
       />
       <components.SearchButton type="submit">
-        {
-          searchMode
-          ? (<components.CloseIcon />)
-          :  (<components.SearchIcon />)
-        }
+        <components.SearchIcon />
       </components.SearchButton>
     </components.SearchForm>
   );
@@ -25,6 +21,5 @@ export const SearchBox = ({ onSubmit, onChange, searchMode }) => {
 
 SearchBox.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  onChange: PropTypes.func.isRequired,
-  searchMode: PropTypes.bool
+  onChange: PropTypes.func.isRequired
 };
