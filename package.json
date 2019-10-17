@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "npm-run-all -p start:api start:ui",
+    "start:ui": "next",
     "start:api": "json-server --no-cors --watch db.json --port 9003",
+    "start:next": "next start",
     "test": "jest"
   },
   "keywords": [],
@@ -28,8 +29,9 @@
     "babel-plugin-module-resolver": "^3.2.0",
     "jest": "^24.9.0",
     "jest-styled-components": "^6.3.3",
-    "react-test-renderer": "^16.10.2",
-    "json-server": "^0.15.1"
+    "json-server": "^0.15.1",
+    "npm-run-all": "^4.1.5",
+    "react-test-renderer": "^16.10.2"
   },
   "babel": {
     "env": {
