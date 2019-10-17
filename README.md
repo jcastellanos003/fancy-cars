@@ -1,3 +1,4 @@
+[![LiveApp][fancy-cars-shield]][fancy-cars-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <br />
@@ -12,7 +13,7 @@
     <a href="https://nextjs.org/docs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://fancy-cars.herokuapp.com">View Demo</a>
+    <a href="https://fancy-cars.jcastellanos003.now.sh/">View Live</a>
     ·
     <a href="https://github.com/jcastellanos003/fancy-cars/issues">Report Bug</a>
     ·
@@ -25,6 +26,7 @@
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
   - [Built With](#built-with)
+  - [Considerations](#considerations)
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Tests](#tests)
@@ -45,6 +47,11 @@ This was a beautiful challenge in many aspects, hope you enjoy the code as much 
 ### Built With
 * [NextJS](https://nextjs.org)
 * [json-server](https://github.com/typicode/json-server)
+
+### Considerations
+* The app is full responsive
+* There is a [live version](https://fancy-cars.jcastellanos003.now.sh/)
+* The first load of the `live version` is slow because the API services are hosted on a free Heroku server
 
 ## Getting Started
 
@@ -81,4 +88,6 @@ Julian Castellanos - jcastellanos003@gmail.com - +57 3502213760
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/julian-castellanos-1b1262b0/
+[fancy-cars-shield]: https://img.shields.io/badge/live-fancy--cars-green
+[fancy-cars-url]: https://fancy-cars.jcastellanos003.now.sh/
 [product-screenshot]: docs/app-browser.png
