@@ -1,42 +1,4 @@
 {
-  "brands": [
-    {
-      "id": "1",
-      "name": "BMW"
-    },
-    {
-      "id": "2",
-      "name": "Chevrolet"
-    },
-    {
-      "id": "3",
-      "name": "Ferrari"
-    },
-    {
-      "id": "4",
-      "name": "Ford"
-    },
-    {
-      "id": "5",
-      "name": "Lamborghini"
-    },
-    {
-      "id": "6",
-      "name": "Land Rover"
-    },
-    {
-      "id": "7",
-      "name": "Mercedes Benz"
-    },
-    {
-      "id": "8",
-      "name": "Porsche"
-    },
-    {
-      "id": "9",
-      "name": "Toyota"
-    }
-  ],
   "vehicles": [
     {
       "id": "1",
