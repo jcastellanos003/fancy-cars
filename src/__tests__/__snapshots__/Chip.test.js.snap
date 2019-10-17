@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip Component Matches the snapshot 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  color: #FAFAFA;
+  background: #2A293B;
+  border: 1px solid #2A293B;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.c0 span {
+  margin-right: 0.5rem;
+}
+
+.c2 {
+  width: 1.3rem;
+}
+
+<div
+  className="c0"
+>
+  <span>
+    Test chip
+  </span>
+   
+  <svg
+    aria-hidden="true"
+    className="c1 c2"
+    fill="currentColor"
+    focusable="false"
+    onClick={[Function]}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-11.414L9.172 7.757 7.757 9.172 10.586 12l-2.829 2.828 1.415 1.415L12 13.414l2.828 2.829 1.415-1.415L13.414 12l2.829-2.828-1.415-1.415L12 10.586z"
+    />
+  </svg>
+</div>
+`;

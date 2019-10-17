@@ -1,64 +1,29 @@
 import { useRouter } from 'next/router';
 
-import { useFetch } from '../../core';
-import * as styled from './styles';
-import * as components from '../../components';
+import { API_ROUTES, vehicleDetailsRowsParser } from '../../core';
+import { PageHeader, BackButton } from '../../components';
+import { VehicleDetail } from '../../containers';
 
-const Vehicle = () => {
+const Vehicle = ({ vehicle }) => {
   const router = useRouter();
-  const { vid } = router.query;
-  const vehicle = (useFetch(`http://localhost:9003/vehicles/${vid}`, {})).response;
-  
-  const onBack = () => {
-    router.back();
-  }
-
-  const rowsSchema = () => {
-    const { image, price, ...rowFields } = vehicle;
-
-    return Object.keys(rowFields).map(key => ({
-      title: key,
-      value: vehicle[key]
-    }));
-  };
+  const rowsSchema = vehicleDetailsRowsParser(vehicle);
 
   return (
     <section>
-      <components.PageHeader>
-        <components.BackButton onClick={onBack}/>
-      </components.PageHeader>
+      <PageHeader>
+        <BackButton onClick={router.back}/>
+      </PageHeader>
 
-      {
-        vehicle
-        ?
-          <styled.StyledVehicleDetail>
-
-            <components.PageTitle>{vehicle.brand} {vehicle.model}</components.PageTitle>
-
-            <components.VehicleCard
-              size="large"
-              image={vehicle.image}
-            >
-              <styled.LineSeparator />
-              <components.PriceLabel>{vehicle.price}</components.PriceLabel>
-
-              {
-                rowsSchema().map((row, idx) => (
-                  <div key={idx}>
-                    <styled.DetailRow>
-                      <span className="title">{ row.title }</span>
-                      <span className="info">{row.value}</span>
-                    </styled.DetailRow>
-                  </div>
-                ))
-              }
-            </components.VehicleCard>
-
-          </styled.StyledVehicleDetail>
-        : <span>Loading...</span>
-      }
+      <VehicleDetail vehicle={vehicle} rowsSchema={rowsSchema} />
     </section>
   )
+};
+
+Vehicle.getInitialProps = async function(context) {
+  const { vid } = context.query;
+  const res = await fetch(`${API_ROUTES.DETAILS}${vid}`);
+
+  return { vehicle: (await res.json()) };
 };
 
 export default Vehicle;

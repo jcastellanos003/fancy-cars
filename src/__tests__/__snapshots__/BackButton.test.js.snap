@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackButton Component Matches the snapshot 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c2 {
+  width: 1.3rem;
+}
+
+.c0 {
+  color: #2A293B;
+  border: 1px solid #2A293B;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  margin-right: 1rem;
+}
+
+.c0:hover {
+  background-color: rgba(0,0,0,0.09);
+}
+
+<div
+  className="c0"
+  onClick={[Function]}
+>
+  <svg
+    aria-hidden="true"
+    className="c1 c2"
+    fill="currentColor"
+    focusable="false"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+    />
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+  </svg>
+   Back
+</div>
+`;

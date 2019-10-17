@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompareButton Component Matches the snapshot 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c2 {
+  color: #2A293B;
+  width: 22px;
+  height: 22px;
+}
+
+.c0 {
+  background: #FAFAFA;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-shadow: 0 11px 40px 0 rgba(0,0,0,0.25),0 2px 10px 0 rgba(0,0,0,0.12);
+  -webkit-transition: -webkit-transform .2s;
+  -webkit-transition: transform .2s;
+  transition: transform .2s;
+}
+
+.c0 span::after {
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.c0:hover {
+  background: #FFC82C;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+<div
+  className="c0"
+  onClick={[Function]}
+>
+  <span
+    item={1}
+  >
+    <svg
+      aria-hidden="true"
+      className="c1 c2"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <path
+          d="M0 0h24v24H0V0z"
+        />
+      </defs>
+      <clipPath>
+        <use
+          overflow="visible"
+          xlinkHref="#a"
+        />
+      </clipPath>
+      <path
+        clipPath="url(#b)"
+        d="M9.01 14H2v2h7.01v3L13 15l-3.99-4v3zm5.98-1v-3H22V8h-7.01V5L11 9l3.99 4z"
+      />
+    </svg>
+  </span>
+</div>
+`;

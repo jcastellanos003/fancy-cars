@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav Component Matches the snapshot 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c4 {
+  margin-right: 0.5rem;
+  width: 1.3rem;
+}
+
+.c3 {
+  margin-right: 0.5rem;
+  width: 1.3rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+  background: #2A293B;
+  border-bottom: 5px solid #201f2f;
+  color: #FAFAFA;
+  font-size: 0.8rem;
+  font-weight: 500;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 50%;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.c1:hover {
+  color: #FFC82C;
+}
+
+.c1:hover .icon {
+  color: #FFC82C;
+}
+
+.c1 .icon {
+  color: #FAFAFA;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #2A293B;
+  height: 50px;
+}
+
+<div
+  className="c0"
+>
+  <a
+    className="c1"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <svg
+      aria-hidden="true"
+      className="c2 c3 icon"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+      />
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+    </svg>
+    Home
+  </a>
+  <a
+    className="c1"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <svg
+      aria-hidden="true"
+      className="c2 c4 icon"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <path
+          d="M0 0h24v24H0V0z"
+        />
+      </defs>
+      <clipPath>
+        <use
+          overflow="visible"
+          xlinkHref="#a"
+        />
+      </clipPath>
+      <path
+        clipPath="url(#b)"
+        d="M9.01 14H2v2h7.01v3L13 15l-3.99-4v3zm5.98-1v-3H22V8h-7.01V5L11 9l3.99 4z"
+      />
+    </svg>
+    Compare
+  </a>
+</div>
+`;

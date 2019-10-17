@@ -1,25 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchBox Component Matches the snapshot 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c4 {
+  width: 1.3rem;
+}
+
+.c2 {
+  color: #FAFAFA;
+  background: #2A293B;
+  border: 1px solid #2A293B;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.c1 {
+  background: #FAFAFA;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1px solid #2A293B;
+  padding: 10px;
+  font-size: 0.8rem;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  outline: none;
+}
+
 <form
   autoComplete="off"
-  className="SearchFormStyles__SearchForm-tgf8ne-0 dxBuVA"
+  className="c0"
   onSubmit={[Function]}
 >
   <input
-    className="SearchInputStyles__SearchInput-sc-9rsbmb-0 hGUUWe"
+    className="c1"
     name="search"
+    onChange={[Function]}
     placeholder="Search your car"
     required={true}
     type="text"
   />
   <button
-    className="SearchButtonStyles__SearchButton-sc-1g7ghe8-0 jThRsn"
+    className="c2"
     type="submit"
   >
     <svg
       aria-hidden="true"
-      className="StyledIconBase-sc-bdy9j4 jbPeIR SearchBoxIcons__SearchIcon-sc-2lvmtv-0 bnSDMz"
+      className="c3 c4"
       fill="currentColor"
       focusable="false"
       viewBox="0 0 24 24"

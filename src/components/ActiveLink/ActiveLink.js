@@ -8,7 +8,7 @@ export const ActiveLink = ({ children, ...props }) => {
   
   return (
     <Link {...props}>
-      {React.cloneElement(child, { active: router.pathname === props.href, theme: props.theme })}
+      {React.cloneElement(child, { active: router && router.pathname === props.href, theme: props.theme })}
     </Link>
   )
 };

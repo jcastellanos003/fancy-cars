@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router';
+import fetch from 'isomorphic-unfetch';
 
 import * as components from '../components';
 import { VehicleList } from '../containers';
-import { useFetch, useForm } from '../core';
+import { useForm, API_ROUTES } from '../core';
 
-const Index = () => {
+const Index = ({ vehicles }) => {
   const router = useRouter();
-  const vehicles = (useFetch('http://localhost:9003/vehicles', {})).response;
 
   const onSearch = () => {
     if (!fields.search) {
@@ -33,6 +33,14 @@ const Index = () => {
       <VehicleList vehicles={vehicles}/>
     </section>
   )
+};
+
+Index.getInitialProps = async function() {
+  const res = await fetch(API_ROUTES.VEHICLES);
+
+  return {
+    vehicles: (await res.json())
+  };
 };
 
 export default Index;

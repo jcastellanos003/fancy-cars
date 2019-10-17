@@ -2,27 +2,28 @@ import { useRouter } from 'next/router';
 
 import * as components from '../components';
 import { VehicleList } from '../containers';
-import { useFetch } from '../core';
+import { API_ROUTES } from '../core';
 
-const Search = () => {
+const Search = ({vehicles, brand}) => {
   const router = useRouter();
-  const brand = router.query.brand || '';
-  const vehicles = (useFetch(`http://localhost:9003/vehicles?brand_like=${brand}`, {})).response;
-
-  const onBack = () => {
-    router.back();
-  }
 
   return (
     <section>
       <components.PageHeader>
-        <components.BackButton onClick={onBack}/>
-        <components.Chip name={brand} onClose={onBack} />
+        <components.BackButton onClick={router.back}/>
+        <components.Chip name={brand} onClose={router.back} />
       </components.PageHeader>
 
       <VehicleList vehicles={vehicles}/>
     </section>
   );
+};
+
+Search.getInitialProps = async function(context) {
+  const { brand } = context.query;
+  const res = await fetch(`${API_ROUTES.SEARCH}${brand}`);
+
+  return { vehicles: (await res.json()), brand };
 };
 
 export default Search;

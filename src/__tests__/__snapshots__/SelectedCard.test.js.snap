@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectedCard Component Matches the snapshot 1`] = `
+.c0 {
+  position: absolute;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 9;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c1 {
+  font-size: 1.2rem;
+  color: #FAFAFA;
+  font-weight: 600;
+}
+
+.c2 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    Selected to compare
+  </div>
+  <div
+    className="c2"
+  >
+    <span>
+      Content selected test
+    </span>
+  </div>
+</div>
+`;

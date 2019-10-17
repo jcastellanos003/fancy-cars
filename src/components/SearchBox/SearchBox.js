@@ -1,21 +1,21 @@
 import PropTypes from 'prop-types';
 
-import * as components from './styles';
+import * as styled from './styles';
 
 export const SearchBox = ({ onSubmit, onChange }) => {
   return (
-    <components.SearchForm onSubmit={onSubmit} autoComplete="off">
-      <components.SearchInput
+    <styled.SearchForm onSubmit={onSubmit} autoComplete="off">
+      <styled.SearchInput
         type="text"
         name="search"
         placeholder="Search your car"
         onChange={onChange}
         required
       />
-      <components.SearchButton type="submit">
-        <components.SearchIcon />
-      </components.SearchButton>
-    </components.SearchForm>
+      <styled.SearchButton type="submit">
+        <styled.SearchIcon />
+      </styled.SearchButton>
+    </styled.SearchForm>
   );
 };
 
